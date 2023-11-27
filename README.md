@@ -1,6 +1,11 @@
 # Reproducible research: version control and R
 
-\# INSERT ANSWERS HERE #
+### **Questions 1, 2, and 3:** 
+
+https://github.com/ashsilvv/logistic_growth/blob/069146d06eeb7300843f47e5bf6cd5f44c999d30/README.md 
+
+### **Question 4** 
+f
 
 ## Instructions
 
