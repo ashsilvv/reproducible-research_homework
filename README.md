@@ -25,6 +25,7 @@ In R, random seeds can be created using the "set.seed()" function. For example, 
 
 **C) Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked
 reproducible-research homework repo.**
+Please see "assignment-brownian-motion.R" in the main branch of this repository. 
 
 
 ## Instruction
