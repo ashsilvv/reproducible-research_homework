@@ -5,9 +5,17 @@
 https://github.com/ashsilvv/logistic_growth/blob/069146d06eeb7300843f47e5bf6cd5f44c999d30/README.md 
 
 ### **Question 4** 
-f
+Execute the code to produce the paths of two random walks. What do you observe?
 
-## Instructions
+The "random_walk" function is called twice to generate two sets of random walk data (data1 and data2), and then these datasets are used to create two separate plots (plot1 and plot2). The "grid.arrange" function is then used to arrange these plots side by side for visualization.
+
+The initial position of each walk is set at (0,0) at time 1. This is done by putting this information in the first row of the dataframe using "df[1,] <- c(0,0,1)". Then, a random walk is generated using a "for" loop. This iterates a new step of a specific size (0.25) at a random angle from the previous step, at each new timestep. Then, then "x" and "y" coordinates of each new step are calculated using this information in addition to the coordinates of the previous  step. This "for" loop is repeated for "n_steps" number of times to generate the random walk. 
+
+Therefore, in each of the two plots arranged side by side, we see a path connecting a series of points. Each point corresponds to a position in the two-dimensional space (x, y). Both paths begin (at time step 1) at the coordinates (0,0). The paths have a colour gradient to indicate the timeframe that each step occurred in, where the earliest steps are dark blue and the latest steps are light blue. This helps the observer to understand the progression of the random walk over time. Each step is the same length (0.25) from the previous step, and each step moves forward at a random angle from the previous step. This introduces variability in the direction of movement, so each plot looks completely different. Having the two random walks visualised next to each other helps to illustrate the inherent randomness in the path's trajectory. 
+
+
+
+## Instruction
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
 
