@@ -4,6 +4,8 @@
 library(ggplot2)
 library(gridExtra)
 
+set.seed(123)
+
 random_walk  <- function (n_steps) {
   
   df <- data.frame(x = rep(NA, n_steps), y = rep(NA, n_steps), time = 1:n_steps)
@@ -28,6 +30,8 @@ random_walk  <- function (n_steps) {
   
 }
 
+set.seed(123)
+
 data1 <- random_walk(500)
 
 plot1 <- ggplot(aes(x = x, y = y), data = data1) +
@@ -39,6 +43,8 @@ plot1 <- ggplot(aes(x = x, y = y), data = data1) +
   xlab("x-coordinate") +
   
   ylab("y-coordinate")
+
+set.seed(456)
 
 data2 <- random_walk(500)
 
