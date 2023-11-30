@@ -5,16 +5,23 @@
 https://github.com/ashsilvv/logistic_growth/blob/069146d06eeb7300843f47e5bf6cd5f44c999d30/README.md 
 
 ### **Question 4** 
-**Execute the code to produce the paths of two random walks. What do you observe?**
+**A) Execute the code to produce the paths of two random walks. What do you observe?**
 
-The "random_walk" function is called twice to generate two sets of random walk data (data1 and data2), and then these datasets are used to create two separate plots (plot1 and plot2). The "grid.arrange" function is then used to arrange these plots side by side for visualization.
+The "random_walk" function is called twice to generate two sets of random walk data (data1 and data2), and then these datasets are used to create two separate plots (plot1 and plot2). The "grid.arrange" function is then used to arrange these plots side by side, so they can be compared.
 
 In the "random_walk" function, the initial position of each walk is set at (0,0) at time 1. This is done by putting this information in the first row of the dataframe using "df[1,] <- c(0,0,1)". Then, a random walk is generated using a "for" loop. This iterates a new step of a specific size (0.25) at a random angle from the previous step, at each new timestep. Then, then "x" and "y" coordinates of each new step are calculated using this information in addition to the coordinates of the previous  step. This "for" loop is repeated for "n_steps" number of times to generate the random walk. Then, when you call "data1 <- random_walk(500)", it sets n_steps to 500: telling the "random_walk" function to generate a dataset for a random walk with 500 steps. This is repeated for each of the two datasets so that both walks are the same length. 
 
-Therefore, in each of the two plots arranged side by side, we see a path connecting a series of points. Each point corresponds to a position in the two-dimensional space (x, y). Between each point is 1 step, and each walk has 500 steps total. Both paths begin (at time step 1) at the coordinates (0,0). The paths have a colour gradient to indicate the timeframe that each step occurred in, where the earliest steps are dark blue and the latest steps are light blue. This helps the observer to understand the progression of the random walk over time. Each step is the same length (0.25) from the previous point, and each step moves forward at a random angle from the previous step, as I previously described. This introduces variability in the direction of movement, so each plot looks completely different. Having the two random walks visualised next to each other helps to illustrate the inherent randomness in the path's trajectory. 
+In each of the two plots arranged side by side, we see a path connecting a series of points. Each point corresponds to a position in the two-dimensional space (x, y). Between each point is 1 step, and each walk has 500 steps total. Both paths begin (at time step 1) at the coordinates (0,0). The paths have a colour gradient to indicate the timeframe that each step occurred in, where the earliest steps are dark blue and the latest steps are light blue. This helps the observer to understand the progression of the random walk over time. Each step is the same length (0.25) from the previous point, and each step moves forward at a random angle from the previous step, as I previously described. This introduces variability in the direction of movement, so each plot looks different. Having the two different random walks visualised next to each other helps to illustrate the inherent randomness in the path's trajectory. 
 
-**Investigate the term random seeds. What is a random seed and how does it work?**
+**B) Investigate the term random seeds. What is a random seed and how does it work?**
 
+Random seeds in computer programming are used to create variables that take on random values, in a way which ensures that the results are reproducible. By setting a seed, you change the underlying state of the random number generator such that it yields the same sequence of pseudo-random numbers every time across different runs (as long as you use the same seed value). You need to set the seed before each call to a random number generation function in order for the numbers to come from the same sequence. Random seeds are extremely important for the reproducibility of code because they ensure that anyone running your code will obtain identical outputs.
+
+The numbers or sequences produced from random seeds are called "pseudo-random" because computers aren't capable of generating truly random numbers, so they use they use algorithms to produce numbers or sequences which appear random. Also, the numeric seed value used to set the seed doesn't actually have any impact on the sequence produced: it's only there so that the sequence can be easily reproduced. 
+
+In R, random seeds can be created using the "set.seed()" function. For example, you can set a random seed with the code "set.seed(69)", then ask R to generate random numbers (e.g., with the "runif()" function). Each time that you set the same seed before asking for random numbers to be generated, the numbers produced will be the same because they come from the same sequence. 
+
+**C) Edit the script to make a reproducible simulation of Brownian motion.**
 
 
 ## Instruction
