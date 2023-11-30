@@ -28,6 +28,16 @@ In R, random seeds can be created using the "set.seed()" function. For example, 
 See below. Edits were made directly to the "random_walk.R" code in the "question-4-code" file.
 ![random_walk_code_comparison](https://github.com/ashsilvv/reproducible-research_homework/assets/150149935/b07bc740-75e4-4f6b-a55a-f296f4ef4006)
 
+### Question 5
+
+**A) Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the question-5-data folder). How many rows and columns does the table have?**
+
+Answer
+
+**B) What transformation can you use to fit a linear model to the data? Apply the transformation.**
+
+Answer
+
 
 ## Instruction
 
