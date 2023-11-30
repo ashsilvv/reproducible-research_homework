@@ -23,9 +23,12 @@ The numbers or sequences produced from random seeds are called "pseudo-random" b
 
 In R, random seeds can be created using the "set.seed()" function. For example, you can set a random seed with the code "set.seed(69)", then ask R to generate random numbers (e.g., with the "runif()" function). Each time that you set the same seed before asking for random numbers to be generated, the numbers produced will be the same because they come from the same sequence. 
 
-**C) Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked reproducible-research homework repo.**
+**C and D) Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked reproducible-research homework repo. Show
+the edit you made to the code in the comparison view.**
 
-See "assignment-brownian-motion.R" on the main branch of this repository. 
+See below. Edits were made directly to the random_walk.R code.
+![random_walk_code_comparison](https://github.com/ashsilvv/reproducible-research_homework/assets/150149935/b07bc740-75e4-4f6b-a55a-f296f4ef4006)
+
 
 ## Instruction
 
