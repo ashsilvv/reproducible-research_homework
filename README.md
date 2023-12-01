@@ -47,16 +47,27 @@ Answer
 #plotting the relationship 
 
 ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.nm.`))) +
+
   #feeding in the data and setting the X and Y variables
+  
   geom_point() +
+  
   #telling R we want a scatterplot
+  
   labs(title = "Virion Volume vs Genome Length",
+  
        x = "Log (genome length/kb)",
+       
        y = "Log (virion volume/nm³)") +
+       
   #making a title and axes labels 
+  
   geom_smooth(method="lm") +
+  
   #fitting a regression line with standard error margins
+  
   theme_light()
+  
 #setting a theme
 
 
