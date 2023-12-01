@@ -32,11 +32,33 @@ See below. Edits were made directly to the "random_walk.R" code in the "question
 
 **A) Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the question-5-data folder). How many rows and columns does the table have?**
 
-Answer
+There are 33 rows and 13 columns in this dataset. 
 
 **B) What transformation can you use to fit a linear model to the data? Apply the transformation.**
 
+You can apply a log transformation to both virion volume (y) and genome length (x). 
+
+**C) Find the exponent (α) and scaling factor (β) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values?**
+
 Answer
+
+**D) Write the code to reproduce the figure shown below.**
+
+# plotting the relationship 
+
+ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.nm.`))) +
+  # feeding in the data and setting the X and Y variables
+  geom_point() +
+  # telling R we want a scatterplot
+  labs(title = "Virion Volume vs Genome Length",
+       x = "Log (genome length/kb)",
+       y = "Log (virion volume/nm³)") +
+  # making a title and axes labels 
+  geom_smooth(method="lm") +
+  # fitting a regression line with standard error margins
+  theme_light()
+# setting a theme
+
 
 
 ## Instruction
