@@ -45,7 +45,14 @@ ANSWER
 **D) Write the code to reproduce the figure shown below.**
 
  ```
-# plotting the relationship between log genome length and log virion volume
+virus <- read.csv("Cui_etal2014.csv")
+head(virus)
+#reading in the data and having a look at it
+
+library(ggplot2)
+#loading in the necessary packages
+
+##### plotting the relationship between log genome length and log virion volume
 
 ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.nm.`))) +
   # feeding in the data and setting the X and Y variables
