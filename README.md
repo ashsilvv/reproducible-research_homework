@@ -45,20 +45,23 @@ ANSWER
 **D) Write the code to reproduce the figure shown below.**
 
  ```
-# plotting the relationship 
+# plotting the relationship between log genome length and log virion volume
 
 ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.nm.`))) +
   # feeding in the data and setting the X and Y variables
   geom_point() +
   # telling R we want a scatterplot
-  labs(title = "Virion Volume vs Genome Length",
-       x = "log [Genome length (kb)]",
-       y = "log [Virion volume (nm3)]") +
-  #making a title and axes labels 
   geom_smooth(method="lm") +
   # fitting a regression line with standard error margins
-  theme_light()
+  labs(x = "log [Genome length (kb)]",
+       y = "log [Virion volume (nm3)]") +
+  #making axes labels 
+  theme_light() + 
 # setting a theme
+  theme(
+  axis.title.x = element_text(size=9, face = "bold"),
+  axis.title.y = element_text(size=9, face = "bold"))
+  # changing axis label font size and making it bold
  ```
 
 **E) What is the estimated volume of a 300 kb dsDNA virus?**
