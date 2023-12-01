@@ -40,7 +40,7 @@ You can apply a log transformation to both virion volume (y) and genome length (
 
 **C) Find the exponent (α) and scaling factor (β) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values?**
 
-Answer
+ANSWER
 
 **D) Write the code to reproduce the figure shown below.**
 
@@ -59,7 +59,11 @@ ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.n
   # fitting a regression line with standard error margins
   theme_light()
 # setting a theme
- ``` 
+ ```
+
+**E) What is the estimated volume of a 300 kb dsDNA virus?**
+
+ANSWER
 
 
 ## Instruction
