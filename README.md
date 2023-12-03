@@ -37,7 +37,27 @@ There are 33 rows and 13 columns in this dataset.
 
 **B) What transformation can you use to fit a linear model to the data? Apply the transformation.**
 
-You can apply a log transformation to both virion volume (y) and genome length (x). 
+You can apply a log transformation to both virion volume (y) and genome length (x). This helps to meet one assumption of linear models: that the relationship between X and Y is linear. If this relationship is linear, then data points appear to fall along a straight line in a scatterplot. You can see how I applied a log transformation and checked the linearity of the relationship between X and Y below: 
+```
+virus <- read.csv("Cui_etal2014.csv")
+# reading in the data
+
+install.packages("ggplot2")
+library(ggplot2)
+#installing packages
+
+###### plotting the relationship:
+
+ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.nm.`))) +
+  # feeding in the data and setting the X and Y variables
+  geom_point() +
+  # telling R we want a scatterplot
+  labs(x = "log [Genome length (kb)]",
+       y = "log [Virion volume (nm3)]") 
+  #making axes labels 
+```
+![linear](https://github.com/ashsilvv/reproducible-research_homework/assets/150149935/78d7085e-fdc9-4be4-bea3-db82664412e7)
+
 
 **C) Find the exponent (α) and scaling factor (β) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values?**
 
