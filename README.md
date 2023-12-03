@@ -101,8 +101,31 @@ ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.n
 
 **E) What is the estimated volume of a 300 kb dsDNA virus?**
 
-ANSWER
+I used the more precise terms for α and β taken from the summary of my linear model, rather than the rounded terms from the paper. I calculated the volume of a 300kb virus using two different approaches, and got answers which were within 7 nm3 of each other. 
 
+V = βL^α
+
+β = 1181.807
+
+L = 300
+
+α = 1.5152
+
+V = 1181.807 * 300 ^ 1.5152 = **6,697,006 nm3**
+
+ALTERNATIVELY: 
+
+y = mx + c 
+
+x = log(300) = 5.703782
+
+m = 1.5152
+
+c = log(1181.807) = 7.0748
+
+y = 1.5152 * 5.703782 + 7.0748 = 15.71717
+
+y = e^15.71717 = **6,696,999 nm3**
 
 ## Instruction
 
