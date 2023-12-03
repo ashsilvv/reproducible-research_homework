@@ -62,7 +62,13 @@ ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.n
 
 **C) Find the exponent (α) and scaling factor (β) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values?**
 
-ANSWER
+The exponent (α) is equal to the regression coefficient, or the slope, of the linear model. In my linear model, this was **1.5152**. This slope is significantly different from 0 (p = 6.44e-10), indicating a statistically significant linear relationship between log(genome length) and log(virion volume).  
+
+The scaling factor (β) is equal to the exponent of the intercept of the linear model (because it needs to be back-transformed from the log scale). In my linear model, this was **1181.8071** (AKA e^7.0748). The intercept was also significantly different from 0 (p = 2.28e-10), which predicts that virion volume (y) has a certain statistically significant baseline value even when genome length (x) is zero, or that virion volume (y) has some statistically significant inherent value which is not accounted for by genome length (x). 
+
+The adjusted R-squared value for this linear model is 0.7042. This indicates that about 70% of the variance in virion volume can be explained by genome length, which is a high percentage. 
+
+The value for the exponent (α) in my linear model is the same as the value found in the paper for dsDNA viruses, when rounded to 2 decimal places (1.52). Likewise, the scaling factor (β) derived from my linear model is also the same as the value found in the paper for dsDNA viruses, when rounded to the nearest whole number (1,182). 
 
 **D) Write the code to reproduce the figure shown below.**
 
