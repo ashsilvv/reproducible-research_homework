@@ -101,7 +101,7 @@ ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.n
 
 **E) What is the estimated volume of a 300 kb dsDNA virus?**
 
-I used the more precise terms for α and β taken from the summary of my linear model, rather than the rounded terms from the paper. I calculated the volume of a 300kb virus using two different approaches, and got answers which were within 7 nm3 of each other. 
+I used the terms for α and β taken from the summary of my linear model, rather than the rounded terms from the paper, to achieve a more precise estimate. I calculated the volume of a 300kb virus using two different approaches - one using V=βL^α, and one using y=mx+c. I got the same answer with each approach (within 7 nm3 of each other).
 
 V = βL^α
 
@@ -126,6 +126,20 @@ c = log(1181.807) = 7.0748
 y = 1.5152 * 5.703782 + 7.0748 = 15.71717
 
 y = e^15.71717 = **6,696,999 nm3**
+
+### Bonus question
+
+**A) Explain the difference between reproducibility and replicability in scientific research.**
+
+Answer
+
+**B) How can git and GitHub be used to enhance the reproducibility and replicability of your work?**
+
+Answer
+
+**C) What limitations do git and GitHub have?**
+
+Answer
 
 ## Instruction
 
