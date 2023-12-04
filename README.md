@@ -98,6 +98,9 @@ ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.n
   axis.title.y = element_text(size=9, face = "bold"))
   # changing axis label font size and making it bold
  ```
+This is the resulting figure:
+![reproduced](https://github.com/ashsilvv/reproducible-research_homework/assets/150149935/1470f87d-dfac-4815-b57e-be4dd5309f26)
+
 
 **E) What is the estimated volume of a 300 kb dsDNA virus?**
 
@@ -127,15 +130,23 @@ y = 1.5152 * 5.703782 + 7.0748 = 15.71717
 
 y = e^15.71717 = **6,696,999 nm3**
 
-### Bonus question
+## Bonus question
 
 **A) Explain the difference between reproducibility and replicability in scientific research.**
 
-Answer
+Both reproducibility and replicability describe the extent to which independent researchers are able to consistently come to the same results as the original author/authors of scientific research. 
+
+If a work is *reproducible*, then independent researchers obtain the same results as the original author using *the same* data, methods, or experimental setup. This is important for assessing how valid the findings are, and whether the original investigation was carried out correctly.
+
+If a work is *replicable*, independent researchers obtain the same results as the original author using *different* data, methods, or experimental setup. This is important for assessing the applicability of the findings to different circumstances. 
 
 **B) How can git and GitHub be used to enhance the reproducibility and replicability of your work?**
 
-Answer
+Git uses a version control system, where you can track changes to a project or code in terms of "commits" and revert back to earlier versions. This feature enhances reproducibility and replicability because it lets independent researchers see how your original investigation was carried out, and what changes you made to your data, methods, or experimental setup. This is especially true if you commit changes regularly and use tags on important commits to see where signficant changes were made. 
+
+Also, GitHub lets you store entire coding files, so they can be made public and easily shared to others. This is critical for helping others carry out the same investigation as you, using the same methods, thus enhancing reproducibility and replicability. Repositories can also easily be forked on GitHub, allowing others to make copies of your work and make their own changes or edits, which also enhances replicability. 
+
+If you share a link to the overall respository, you can not only share code but also important context and other methods used, often within README files. This also helps to increase reproducibility and replicability because you can include information on how your project was carried out, which other people can follow.
 
 **C) What limitations do git and GitHub have?**
 
