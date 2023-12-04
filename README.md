@@ -2,7 +2,7 @@
 
 ### **Questions 1, 2, and 3:** 
 
-https://github.com/ashsilvv/logistic_growth/blob/069146d06eeb7300843f47e5bf6cd5f44c999d30/README.md 
+https://github.com/fraxinus-excelsiorr/logistic_growth/blob/069146d06eeb7300843f47e5bf6cd5f44c999d30/README.md 
 
 ### **Question 4** 
 **A) Execute the code to produce the paths of two random walks. What do you observe?**
@@ -26,7 +26,7 @@ In R, random seeds can be created using the "set.seed()" function. For example, 
 **C) & D) Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked reproducible-research homework repo. Show the edit you made to the code in the comparison view.**
 
 See below. Edits were made directly to the "random_walk.R" code in the "question-4-code" file.
-![comparison](https://github.com/ashsilvv/reproducible-research_homework/assets/150149935/5717d64a-c689-487b-9329-9d5660d2998a)
+![comparison](https://github.com/fraxinus-excelsiorr/reproducible-research_homework/assets/150149935/5717d64a-c689-487b-9329-9d5660d2998a)
 
 
 ### Question 5
@@ -57,7 +57,7 @@ ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.n
        y = "log [Virion volume (nm3)]") 
   # making axes labels 
 ```
-![linear](https://github.com/ashsilvv/reproducible-research_homework/assets/150149935/78d7085e-fdc9-4be4-bea3-db82664412e7)
+![linear](https://github.com/fraxinus-excelsiorr/reproducible-research_homework/assets/150149935/78d7085e-fdc9-4be4-bea3-db82664412e7)
 
 
 **C) Find the exponent (α) and scaling factor (β) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values?**
@@ -99,7 +99,7 @@ ggplot(virus, aes(x = log(`Genome.length..kb.`), y = log(`Virion.volume..nm.nm.n
   # changing axis label font size and making it bold
  ```
 This is the resulting figure:
-![reproduced](https://github.com/ashsilvv/reproducible-research_homework/assets/150149935/1470f87d-dfac-4815-b57e-be4dd5309f26)
+![reproduced](https://github.com/fraxinus-excelsiorr/reproducible-research_homework/assets/150149935/1470f87d-dfac-4815-b57e-be4dd5309f26)
 
 
 **E) What is the estimated volume of a 300 kb dsDNA virus?**
