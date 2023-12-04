@@ -104,7 +104,7 @@ This is the resulting figure:
 
 **E) What is the estimated volume of a 300 kb dsDNA virus?**
 
-I used the terms for α and β taken from the summary of my linear model, rather than the rounded terms from the paper, to achieve a more precise estimate. I calculated the volume of a 300kb virus using two different approaches - one using V=βL^α, and one using y=mx+c. I got the same answer with each approach (within 7 nm3 of each other).
+I used the terms for α and β taken from the summary of my linear model, rather than the rounded terms from the paper, to achieve a more precise estimate.
 
 V = βL^α
 
@@ -116,19 +116,6 @@ L = 300
 
 V = 1181.807 * 300 ^ 1.5152 = **6,697,006 nm3**
 
-ALTERNATIVELY: 
-
-y = mx + c 
-
-x = log(300) = 5.703782
-
-m = 1.5152
-
-c = log(1181.807) = 7.0748
-
-y = 1.5152 * 5.703782 + 7.0748 = 15.71717
-
-y = e^15.71717 = **6,696,999 nm3**
 
 ## Bonus question
 
@@ -150,7 +137,10 @@ If you share a link to the overall respository, you can not only share code but 
 
 **C) What limitations do git and GitHub have?**
 
-Answer
+Links to GitHub repositories are not stable over long periods of time because they include the author's username, which can be changed at any time. This undermines the reproducibility/replicability of the work if methods and code are only accessible for a certain period of time. Sites like protocols.io assign a DOI to each protocol, which means that information about projects or research can be shared more reliably, so they are easier for other people to carry out. 
+
+Another disadvantage of git is that there is a steep learning curve for new users, so for some people it is much harder to understand and follow methodologies or code in a github repository than others. This undermines the ability of others to carry out your project, so it becomes less reproducible. One reason for this is that git lacks a functional graphical interface and relies instead on the use of commands: a problem which is fixed by sites like protocols.io, which have a more user-friendly interface. 
+
 
 ## Instruction
 
