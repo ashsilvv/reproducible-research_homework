@@ -2,7 +2,7 @@
 
 ### **Questions 1, 2, and 3:** 
 
-https://github.com/fraxinus-excelsiorr/logistic_growth/blob/069146d06eeb7300843f47e5bf6cd5f44c999d30/README.md 
+https://github.com/fraxinus-excelsiorr/logistic_growth
 
 ### **Question 4** 
 **A) Execute the code to produce the paths of two random walks. What do you observe?**
